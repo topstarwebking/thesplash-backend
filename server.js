@@ -31,7 +31,7 @@ app.use("/whitelist", require("./controllers/whitelist.controller"));
 const PORT = process.env.PORT || 5850;
 
 app.get("/", (req, res) => {
-  // res.sendFile(__dirname + "/_helpers/_static/welcome.html");
+  res.sendFile(__dirname + "/_helpers/_static/welcome.html");
 });
 
 app.get("*", function (req, res) {
