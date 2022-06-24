@@ -28,6 +28,8 @@ app.use("/whitelist", require("./controllers/whitelist.controller"));
 // app.use("/basket", require("./controllers/basket.controller"));
 
 //Default route
+const PORT = process.env.PORT || 5850;
+
 app.get("/", (req, res) => {
   // res.sendFile(__dirname + "/_helpers/_static/welcome.html");
 });
@@ -38,8 +40,8 @@ app.get("*", function (req, res) {
 });
 
 // start server
-const server = app.listen(conf.appPort, function () {
-  console.log(`\nServer is listening on port ${conf.appPort}`);
+const server = app.listen(PORT, function () {
+  console.log(`\nServer is listening on port ${PORT}`);
 });
 
 process.on("SIGTERM", function () {
