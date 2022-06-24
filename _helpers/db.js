@@ -26,7 +26,7 @@ gCloud
   .getSecret("freshcart-mongo-uri")
   .then((urifromsecret) => {
     connectDB(
-      "mongodb+srv://Robin:yDCuGR51NjyCHhu4@cluster0.5wwuzix.mongodb.net/?retryWrites=true&w=majority"
+      "mongodb+srv://awesome:awesome@cluster0.5qigtsy.mongodb.net/?retryWrites=true&w=majority"
     );
   })
   .catch((error) => {
