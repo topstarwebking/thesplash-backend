@@ -4,7 +4,7 @@
   "description": "monorepo-backend",
   "license": "apache 2.0",
   "scripts": {
-    "start": "nodemon ./server.js",
+    "start": "node ./server.js",
     "stop": "killall -SIGINT ./server.js"
   },
   "dependencies": {
