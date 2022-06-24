@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-app
+  namespace: k8-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-app
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: backend-app
+    spec:
+      serviceAccountName: k8-backend-sa
+      containers:
+      - name: backend-app
+        image: LOCATION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG
+        ports:
+        - containerPort: 5850
+        resources:
+          requests:
+            cpu: 100m
+          limits:
+            cpu: 100m

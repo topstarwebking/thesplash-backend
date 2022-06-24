@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "cartId": "NAP01-55",
+      "cartInfo": {
+        "cartFriendlyName": "Morelia spilotes variegata",
+        "cartZipCode": 60540
+      },
+      "cartItems": [
+        {
+          "itemId": 1,
+          "qtyOnHand": 20
+        },
+        {
+          "itemId": 4,
+          "qtyOnHand": 10
+        }
+      ]
+    },
+    {
+      "cartId": "NAP01-93",
+      "cartInfo": {
+        "cartFriendlyName": "Geococcyx californianus",
+        "cartZipCode": 60540
+      },
+      "cartItems": [
+        {
+          "itemId": 1,
+          "qtyOnHand": 18
+        },
+        {
+          "itemId": 3,
+          "qtyOnHand": 50
+        }
+      ]
+    }
+  ]
+}

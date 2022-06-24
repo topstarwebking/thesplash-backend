@@ -1,0 +1,6 @@
+﻿{
+  "appPort": 5850,
+  "localDBFlag": "true",
+  "localDBURI": "mongodb://localhost:27017/freshcart?readPreference=primary&directConnection=true&ssl=false",
+  "localJWT": "BOCNyX2gVY2n9E0kUlAHpSHeSSBFl8ut"
+}

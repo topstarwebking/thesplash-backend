@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: k8-backend
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 5850
+  selector:
+    app: backend-app
