@@ -1,7 +1,5 @@
 # The splash backend service
 
-[![GKE Build/Deploy](https://github.com/freshcart/monorepo-backend/actions/workflows/gcloud-deploy.yml/badge.svg)](https://github.com/freshcart/monorepo-backend/actions/workflows/gcloud-deploy.yml)
-
 #### Some Important Commands for local development
 
 ```
